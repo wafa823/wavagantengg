@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe0f0;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Selamat Ulang Tahun! 🎂</h1>
+        <p>Semoga panjang umur, sehat selalu, dan bahagia!</p>
+        <button class="btn" onclick="showMessage()">Klik untuk Kejutan!</button>
+        <p id="message" style="display:none; font-size: 18px; margin-top: 20px;"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = "🎊 Semoga semua impianmu tercapai! 🎊";
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
